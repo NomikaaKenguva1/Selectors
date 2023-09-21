@@ -1,0 +1,163 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one p{
+            color: green;
+            background-color: greenyellow;
+        }
+        .two>p{
+            color: orange;
+            background-color: skyblue;
+        }
+        .three  + p{
+            color: brown;
+            background-color: yellow;
+        }
+        .four ~ p{
+            color: red;
+            background-color: blue;
+        }
+        [type]{
+            border: 2px solid purple;
+        }
+        [type="text"]{
+            width: 200px;
+            height: 40px;
+        }
+        [name^="ge"]{
+            width: 100px;
+            height: 20px;
+        }
+        [name$="ge"]{
+            width: 300px;
+            height: 30px;
+        }
+        [name*="dr"]{
+            width: 200px;
+            height: 100px;
+            background-color: blueviolet;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        [name|="pass"]{
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        [name~="mail"]{
+            background-color: pink;
+            width: 200px;
+            height: 60px;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        [title^="fl"]{
+            width: 150px;
+            height: 150px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+        [title|="animal"]{
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            border-radius: 20px;
+        }
+        [title$="fruit"]{
+            width: 180px;
+            height: 180px;
+            margin-left: 30px;
+            border-radius: 90px;
+            border: 2px solid green;
+        }
+        [title~="car"]{
+            width: 180px;
+            height: 180px;
+            margin-left: 30px;
+            border-radius: 50px;
+            border: 2px solid gold;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flowers</h1>
+    <img src="https://img.freepik.com/free-photo/bunch-flowers-with-pink-yellow-background_1340-31672.jpg?w=2000" title="flower">
+    <img src="https://images.unsplash.com/photo-1530092285049-1c42085fd395?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2hpdGUlMjBmbG93ZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80" title="flower">
+    <img src="https://cdn.pixabay.com/photo/2012/03/01/00/55/flowers-19830_640.jpg" title="flower">
+    <img src="https://contentgrid.homedepot-static.com/hdus/en_US/DTCCOMNEW/Articles/discover-the-secret-language-of-flowers-2022-thumbnail.jpeg" title="flower">
+    <h1>pets</h1>
+    <img src="https://static01.nyt.com/images/2020/05/09/multimedia/09sp-ai-pets-promo/09sp-ai-pets-promo-superJumbo.jpg" title="animal-1">
+    <img src="https://static.wixstatic.com/media/816c7d_2e2dabdfb6ee4f329b2f2fe7c7985e18~mv2.jpg/v1/fill/w_2500,h_1666,al_c/816c7d_2e2dabdfb6ee4f329b2f2fe7c7985e18~mv2.jpg" title="animal-2">
+    <img src="https://cdcssl.ibsrv.net/ibimg/smb/450x560_80/webmgr/0o/f/2/new_blade.png.webp" title="animal-3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYISepFef2bugjdcpguvUtMWqrIruwJKZ7rg&usqp=CAU" title="animal-4">
+    <h1>Fruits</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScfaDJSAlZO8o-HerBWzsbaRogHbTABFIF0w&usqp=CAU" title="first fruit">
+    <img src="https://farmersfz.com/assets/public/vegimg/mandarin.png" title="second fruit">
+    <img src="https://cdn11.bigcommerce.com/s-podjif72xf/images/stencil/350x350/products/10375/5881/990047__94557.1591323806.jpg?c=2" title="third fruit">
+    <img src="https://www.realsimple.com/thmb/2iTXvV4ZVcgHTk6NCWLmab45JwI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hydrating-fruits-GettyImages-1288701253-41aec8b35b3b4dc6b19ecc65db892014.jpg" title="fourth fruit">
+
+    <form action="">
+        <fieldset>
+            <legend>Signup Form</legend>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="full name" fdprocessedid="te3z0n"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">Male<br>
+        <input type="radio" id="female" name="gender" value="female">Female<br>
+        <label for="dob">Date Of Birth</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="address">Address:</label><br>
+        <textarea name="address" id="address" cols="20" rows="1" placeholder="address"></textarea><br>
+        <label for="email">Email Id:</label><br>
+        <input type="emial" id="email" name="e mail" placeholder="email" fdprocessedid="hdyjbh"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="pass-word" placeholder="password" fdprocessedid="j122g"><br>
+        <br><input type="submit" value="Signup" fdprocessedid="vqe47"> <input type="reset"><br><br>
+    </fieldset>
+    </form>
+    <h1>Descendent selector</h1>
+    <div class="one">
+        <p>child1</p>
+        <p>Child2</p>
+        <div>
+            <p>inDirect Child1</p>
+        </div>
+    </div>
+    <h1>Child Selector</h1>
+    <div class="two">
+        <p>Child1</p>
+        <p>Child2</p>
+        <div>
+            <p>inDirect Child1</p>
+        </div>
+    </div>
+    <h1>Adjacent Sibling Slector</h1>
+    <div class="three">
+        <p>Child1</p>
+        <p>Child2</p>
+        <div>
+            <p>inDirect Child1</p>
+        </div>
+    </div>
+    <p> Element1</p>
+    <p>Element2</p>
+    <h1>General sibling selector</h1>
+    <div class="four">
+        <p>Child1</p>
+        <p>Child2</p>
+        <div>
+            <p>inDirect Child1</p>
+        </div>
+    </div>
+    <p>Element1</p>
+    <p>Element2</p>
+
+   
+    
+
+</body></html>
